@@ -11,6 +11,7 @@
 		19CAF6A82BB9EBB70010F101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CAF6A72BB9EBB70010F101 /* ContentView.swift */; };
 		19CAF6AA2BB9EBBA0010F101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CAF6A92BB9EBBA0010F101 /* Assets.xcassets */; };
 		19CAF6AD2BB9EBBA0010F101 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CAF6AC2BB9EBBA0010F101 /* Preview Assets.xcassets */; };
+		19CAF6B52BB9F4450010F101 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19CAF6B42BB9F4450010F101 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		19CAF6A72BB9EBB70010F101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		19CAF6A92BB9EBBA0010F101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19CAF6AC2BB9EBBA0010F101 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19CAF6B62BB9F4750010F101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CAF6B52BB9F4450010F101 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		19CAF6A42BB9EBB70010F101 /* weatherAPI */ = {
 			isa = PBXGroup;
 			children = (
+				19CAF6B62BB9F4750010F101 /* Info.plist */,
 				19CAF6A52BB9EBB70010F101 /* weatherAPIApp.swift */,
 				19CAF6A72BB9EBB70010F101 /* ContentView.swift */,
 				19CAF6A92BB9EBBA0010F101 /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = weatherAPI;
+			packageProductDependencies = (
+				19CAF6B42BB9F4450010F101 /* Alamofire */,
+			);
 			productName = weatherAPI;
 			productReference = 19CAF6A22BB9EBB70010F101 /* weatherAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 19CAF6992BB9EBB70010F101;
+			packageReferences = (
+				19CAF6B32BB9F4440010F101 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 19CAF6A32BB9EBB70010F101 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +284,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"weatherAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = weatherAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +313,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"weatherAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = weatherAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19CAF6B32BB9F4440010F101 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19CAF6B42BB9F4450010F101 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19CAF6B32BB9F4440010F101 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19CAF69A2BB9EBB70010F101 /* Project object */;
 }
