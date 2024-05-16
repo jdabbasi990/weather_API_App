@@ -1,9 +1,7 @@
 # SwiftUI weather APP ⛅
 
 ## Demo
-
-https://github.com/jdabbasi990/weather_API_App/assets/39283578/76768a0c-f89d-4f19-883e-089783378637
-
+![ScreenRecording2024-05-16at4 48 47PM-ezgif com-video-to-gif-converter](https://github.com/jdabbasi990/weather_API_App/assets/39283578/fb0f3a4b-e446-4af0-8604-151eaac0b6d8)
 
 ## Technology details
 - weatherapi.com API
