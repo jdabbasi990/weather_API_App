@@ -2,7 +2,8 @@
 
 ## Demo
 
-https://github.com/jdabbasi990/weather_API_App/assets/39283578/03b61acc-ff2f-4f56-99fa-604ca33934cc
+https://github.com/jdabbasi990/weather_API_App/assets/39283578/76768a0c-f89d-4f19-883e-089783378637
+
 
 ## Technology details
 - weatherapi.com API
